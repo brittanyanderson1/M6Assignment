@@ -16,36 +16,39 @@
 </head>
 <body class="m-4">
     <h1>Employee Management System</h1>
-        <form id="empForm">
+        <form id="empForm" class="border border-info p-4 color" class="background color ">
+    <div form-group>
     <label for="inputName">8-Digit Employee ID:</label>
-        <br>
-            <input type="text" id = "id" maxlength="8" placeholder="ex. 12345678"required>
-        <br>
+            <input class="form-control" type="text" id = "id" maxlength="8" placeholder="ex. 12345678"required>
+    </div>
+    <div form-group>
     <label for="inputName">Full Name:</label>
-        <br>
-            <input type="text" id="name" placeholder="ex. Jack Smith"required>
-        <br>
+            <input class="form-control" type="text" id="name" placeholder="ex. Jack Smith"required>
+    </div>
+    <div form-group>
     <label for="inputName">4-Digit Extension:</label>
-        <br>
-            <input type="text" id="ext" maxlength="4" placeholder="ex. 1234"required>
-        <br>
+            <input class="form-control" type="text" id="ext" maxlength="4" placeholder="ex. 1234"required>
+    </div>
+    <div form-group>
     <label for="inputName">Email:</label>
-        <br>
-            <input type="email" id="email" placeholder="ex. name@company.com"required>
-        <br>
-    <label for="inputName">Department:</label>
-        <br>
-            <select id="department">
-            <option value="" disabled selected>Select an Option</option>
-            <option value="">Administrative</option>
-            <option value="">Engineering</option>
-            <option value="">Executive</option>
-            <option value="">Marketing</option>
-            <option value="">Quality Assurance</option>
-            <option value="">Sales</option>
-            </select>
-        <br>
-    <button type="submit" id="submit">Add Employee</button>
-    </form>
+            <input class="form-control" type="email" id="email" placeholder="ex. name@company.com"required>
+    </div>
+    <div>
+    <label for="inputName" class="form-group">Department:</label>
+            <select id="department" required>
+                <option value="" disabled selected>Select an Option</option>
+                <option value="Administrative">Administrative</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Executive">Executive</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="Sales">Sales</option>
+        </select>
+    </div>
+    <br>
+    <div >
+    <button type="submit" id="submit" class="btn btn-primary">Add Employee</button>
+    </div>
+        </form>
 </body>
 </html>
